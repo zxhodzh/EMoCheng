@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://dqce43hejffq6"]
 
+[ext_resource type="PackedScene" uid="uid://cbmwf4iwk58kw" path="res://场景/玩家.tscn" id="1_47jrx"]
+
 [sub_resource type="Gradient" id="Gradient_50crp"]
 colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
 
@@ -14,9 +16,14 @@ size = Vector2(32, 32)
 [node name="世界场景" type="Node2D" unique_id=1292406424]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=603370999]
+position = Vector2(574.25, 613.5)
+scale = Vector2(37.171875, 2.46875)
 texture = SubResource("GradientTexture2D_nf6cu")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D" unique_id=119324384]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D" unique_id=518449973]
 shape = SubResource("RectangleShape2D_4kxuq")
+
+[node name="玩家" parent="." unique_id=2058999762 instance=ExtResource("1_47jrx")]
+position = Vector2(563, 439)
