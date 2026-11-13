@@ -1,3 +1,5 @@
 [gd_scene format=3 uid="uid://dqce43hejffq6"]
 
 [node name="世界场景" type="Node2D" unique_id=1292406424]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=603370999]
