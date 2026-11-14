@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cbmwf4iwk58kw"]
 
+[ext_resource type="Script" uid="uid://c871oco8qjvyq" path="res://脚本/玩家.gd" id="1_48s5c"]
+
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_cv038"]
 size = Vector2(18, 48)
 
@@ -7,6 +9,8 @@ size = Vector2(18, 48)
 size = Vector2(18, 48)
 
 [node name="玩家" type="CharacterBody2D" unique_id=2058999762]
+floor_snap_length = 4.0
+script = ExtResource("1_48s5c")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1315998989]
 position = Vector2(0, -24)
