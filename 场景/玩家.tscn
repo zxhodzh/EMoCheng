@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://cbmwf4iwk58kw"]
 
 [ext_resource type="Script" uid="uid://c871oco8qjvyq" path="res://脚本/玩家.gd" id="1_48s5c"]
+[ext_resource type="Script" uid="uid://pxt7ccni66ix" path="res://状态/玩家空闲状态.gd" id="2_p4ebf"]
+[ext_resource type="Script" uid="uid://hogmeo7nqv3v" path="res://状态/玩家跑步状态.gd" id="3_4mva7"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_cv038"]
 size = Vector2(18, 48)
@@ -19,3 +21,11 @@ texture = SubResource("PlaceholderTexture2D_cv038")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2065529037]
 position = Vector2(0, -24)
 shape = SubResource("RectangleShape2D_4kxuq")
+
+[node name="玩家状态机" type="Node" parent="." unique_id=618648187]
+
+[node name="玩家空闲状态" type="Node" parent="玩家状态机" unique_id=655524448]
+script = ExtResource("2_p4ebf")
+
+[node name="玩家跑步状态" type="Node" parent="玩家状态机" unique_id=1866011263]
+script = ExtResource("3_4mva7")
